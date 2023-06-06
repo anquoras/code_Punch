@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("Location: welcome.php");
+header("Location: login.php");
 include("html/footer.html");
 echo "<br>";
 $name = "nghia";
