@@ -1,6 +1,6 @@
 <?php
 session_start();
-setcookie("users", "user", time() + 3600, "/Website");
+setcookie("users", "user", time() + 3600, "/");
 include("html/login.html");
 ?>
 
@@ -35,13 +35,13 @@ try {
             echo '<span style="color:red;">Username or password is empty</span>';
         } else {
             if (($username == "admin") & (password_verify($password, $hash))) {
-                // setcookie("users","admin", time()+ 4000,"/Website");
+                // setcookie("users","admin", time()+ 4000,"/");
                 $_SESSION["username"] = $username;
                 $_SESSION["password"] = $password;
 
                 $_COOKIE["users"] = "admin";
                 if (password_verify("admin", hash_cookie($_COOKIE["users"]))) {
-                    setcookie("users", "admin", time() + 3600, "/Website");
+                    setcookie("users", "admin", time() + 3600, "/");
                     $_SESSION[$_COOKIE["users"]] = "admin";
                     header("Location: home.php");
                 }
@@ -51,7 +51,7 @@ try {
                 $_COOKIE["users"] = "students";
 
                 if (password_verify("students", hash_cookie($_COOKIE["users"]))) {
-                    setcookie("users", "students", time() + 3600, "/Website");
+                    setcookie("users", "students", time() + 3600, "/");
                     $_SESSION[$_COOKIE["users"]] = "students";
                     header("Location: home.php");
                 }
@@ -60,7 +60,7 @@ try {
                 $_SESSION["password"] = $password;
                 $_COOKIE["users"] = "teachers";
                 if (password_verify("teachers", hash_cookie($_COOKIE["users"]))) {
-                    setcookie("users", "teachers", time() + 3600, "/Website");
+                    setcookie("users", "teachers", time() + 3600, "/");
                     $_SESSION[$_COOKIE["users"]] = "teachers";
                     header("Location: home.php");
                 }
