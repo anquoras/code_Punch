@@ -1,5 +1,6 @@
 <?php
 session_start();
+header("Location: welcome");
 echo "<br>";
 $name = "nghia";
 $age = 20;
