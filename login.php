@@ -69,7 +69,7 @@ try {
         }
     }
     mysqli_close($connect);
-} catch (TypeError) {
+} catch (TypeError $e) {
     echo '<h1>There is an Error</h1>';
 }
 ?>
