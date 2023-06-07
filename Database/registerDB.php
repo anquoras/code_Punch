@@ -1,6 +1,6 @@
 <?php
 
-    $db_server = "localhost";
+    $db_server = "157.245.200.191";
     $db_user = "admin";
     $db_pass = "7ec7dab4023ede2b34f2445e61b8b47e6ce492c945525daf";
     $db_name = "users";
