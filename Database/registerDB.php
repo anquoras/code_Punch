@@ -1,11 +1,10 @@
 <?php
 
-    $db_server = "walrus-app-qf4im.ondigitalocean.app";
-    $db_user = "apps";
-    $db_pass = "";
+    $db_server = "EHCTeam11";
+    $db_user = "admin";
+    $db_pass = "7ec7dab4023ede2b34f2445e61b8b47e6ce492c945525daf";
     $db_name = "users";
     $connect = "";
-
 
     try{
         $connect = mysqli_connect($db_server, $db_user, $db_pass, $db_name);
