@@ -1,6 +1,6 @@
 <?php
 
-    $db_server = "walrus-app-qf4im.ondigitalocean.app";
+    $db_server = "localhost";
     $db_user = "root";
     $db_pass = "";
     $db_name = "users";
