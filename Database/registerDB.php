@@ -1,8 +1,8 @@
 <?php
 
     $db_server = "localhost";
-    $db_user = "admin";
-    $db_pass = "1234";
+    $db_user = "sammy";
+    $db_pass = "Qa061103#";
     $db_name = "users";
     $connect = "";
 
